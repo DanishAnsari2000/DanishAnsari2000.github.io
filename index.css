@@ -88,7 +88,7 @@ margin:auto;
 .for-second-image-content{
     margin-top:70px;
     padding:100px 30px;
-    background:url('../image/d.jpg');
+    background:url('../d.jpg');
     background-size:cover;
     background-blend-mode:darken;
     color: white;
