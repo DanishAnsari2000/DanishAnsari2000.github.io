@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width:100%;
+    display: flex;
+    padding:10px;
+    align-items: center;
+    box-shadow:1px 1px 5px 1px rgb(139, 134, 134);
+
+}
+.name{
+    margin-left: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.menu ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    position: absolute;
+    margin-top: -10px;
+    right:60px;
+}
+
+.menu ul li{
+    font-size: 18px;
+    padding:0px 10px;
+}
+
+.menu ul li a{
+    color:black;
+}
+.check i{
+    display: none;
+}
+@media screen and (max-width:500px)
+{
+    .check i{
+        display: inline;
+    }
+    .menu ul li a{
+        color:white;
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        border-bottom: 1px solid #e7e7;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu{
+        display: none;
+
+    }
+
+    .menu ul {
+        width: 100%;
+        background:blue;
+        display: inline;
+        right: 0;
+        top:54px;
+        transition:tansform 250ms ese-in-out;
+    }
+
+    .check{
+        width:20px;
+        height:20px;
+        right: 10px;
+        position: absolute;
+        /*background-image:url("http://www.argusacademy.com/tribhuwan/1.jpg");*/
+        cursor: pointer;
+    }
+}
