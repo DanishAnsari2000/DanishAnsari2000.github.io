@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="header">
+        
+        <div class="headdiv">
+            <div>
+            <h2 class="hey">Hey ! My name is</h2>
+            <h2 class="name">Danish Ansari</h2>
+            <h2 class="iam"><span style="color:rgb(243, 42, 42)">I'm </span><dan></dan></h2>
+            
+			<a href="hire.html" class="hire">Hire Me</a>
+        </div>
+        <div>
+    </nav>
+    <h2 class="about"><a href="#">About</a></h2>
+    <section class="aboutsection">
+        <div class="imgsec">
+            <span><img src="danish.jpg" class="imgstyle"></span>
+        </div>
+        <div class="hello">
+            <h2>Hello</h2><br>
+            <p>My name is Danish Ansari I am front end Developer .I have been Developing Websites since parts 1+year .
+                i have 2 month experience in Angular .i am work with php for back end and Mysql as Database. </p><br>
+            <p>I am a self learnt Developer and very much passionate about my career in web Development.</p><br>
+            <p>Along with Development Currently i am pursuing my bachelor;s degree in technology(B-thech)in computer
+                science Engineering (2019-2023)</p>
+
+        </div>
+
+    </section>
+    <h2 class="about"><a href="">skills</a></h2>
+    <section class="skills">
+        <div class="html" style="color:green">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JAVASCRIPT</p>
+            <p>React</p>
+            <p>PHP</p>
+            <p>Mysql</p>
+            <p>Java</p>
+            <p>Python</p>
+            <p>Data Structure and Algorithem</p>
+        </div>
+
+        <div class="html1">
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+            <p style="color: green;">Experties</p>
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+            <p style="color:rgb(240, 54, 54);">Beginner</p>
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+            <p style="color:rgb(240, 54, 54);">Beginner</p>
+            <p style="color:rgb(7, 7, 71);">Intermediate</p>
+        </div>
+
+    </section>
+    <h2 class="about"><a href="#">My works</a></h2>
+    <section class="mywork">
+        <div class="infodiv">
+            <h2>Mucis Player</h2>
+            <p>In this web page I put my Favorite song</p>
+            <button><a href="https://danishds.000webhostapp.com/MusicPlayer/">Visit Site </a></button>
+        </div>
+        <div class="infodiv">
+            <h2>Star Patten</h2>
+            <p>In that web site you got the star pattern best of c language </p>
+            <button><a href="https://danishds.000webhostapp.com/Star%20pattern%20with%20c/#">Visit Site </a></button>
+        </div>
+    </section>
+    <h2 class="about"><a href="#">Contect me</a></h2>
+    <section class="contectme">
+        <div class="form">
+            <form class="forms">
+                <label>Name</label><br>
+                <input type="text" placeholder="Enter name " class="takeinput" required style="padding-left:10px;font-size:17px"><br>
+
+
+                <label>WhatsApp Number</label><br>
+                <input type="tetx" placeholder="whatsapp no." class="takeinput" required style="padding-left:10px;font-size:17px"><br>
+                
+                <label>Message</label><br>
+                <textarea rows="7" cols="25" placeholder="write Message" required style="padding-left:10px;font-size:17px"></textarea><br>
+                <!--<button class="send">Send</button>-->
+                <input type="submit" value="Send" class="send">
+            </form>
+        </div>
+        <div class="socal">
+            <h3>Danish Ansari</h3>
+            <p>Computer Science Engineer</p>
+            <p style="margin-bottom: 20px;">Email:-ddanish1928@gmail.com</p>
+            <span class="icon" >
+               <a href="https://www.facebook.com/profile.php?id=100024101466127"><i class="fab fa-facebook-f"></i></a> 
+               <a href="#"><i class="fab fa-instagram"></i></a> 
+               <a href="#"><i class="fab fa-twitter"></i></a> 
+            </span>
+
+        </div>
+    </section>
+    <section>
+        <div class="copywrite">
+            <p>Copy write@2021  <span><i>Danish Ansari</i></span></p>
+        </div>
+
+
+    </section>
+
+    <script>
+        const jobs=["Web Developer","Engineer","danish"];
+        let start=0;
+        let index=0;
+        let element=document.querySelector(".iam dan");
+
+        function typing(){
+            if(jobs[index].lenght!=start-3){
+                element.append(jobs[index].slice(start,start+1));
+                start++;
+                setTimeout(function(){typing()},150);
+
+            }
+
+            else{
+                start =0;
+                index++;
+                jobs.lenght==index?index=0:element.innerHTML="";
+                typing();
+            }
+        } 
+        typing();
+    </script>
+</body>
+
+</html>
